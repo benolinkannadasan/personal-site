@@ -1,0 +1,22 @@
+[
+  {
+    "id": "book-1",
+    "cover": "https://www.penguin.co.in/wp-content/uploads/2026/10/9789377306663-1.jpg",
+    "url": "https://www.penguin.co.in/book/the-ideas-that-shaped-india-and-its-economy/",
+    "path": "assets/books/book-1.jpg",
+    "bytes": 151205
+  },
+  {
+    "id": "book-2",
+    "cover": "https://cdn.penguin.co.uk/dam-assets/books/9781804940846/9781804940846-jacket-large.jpg",
+    "url": "https://www.penguin.co.uk/books/418340/dust-by-howey-hugh/9781804940846",
+    "path": "assets/books/book-2.jpg",
+    "bytes": 157776
+  },
+  {
+    "id": "book-3",
+    "cover": "https://www.crossword.in/cdn/shop/files/917on1o1TbL._SL1500.jpg?v=1755872954",
+    "url": "https://www.crossword.in/products/last-among-equals-power-caste-and-politics-in-bihars-villages",
+    "path": "assets/books/book-3.jpg"
+  }
+]

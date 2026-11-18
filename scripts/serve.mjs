@@ -1,0 +1,15 @@
+import http from 'node:http';
+import {syncWorkbook} from './content-workbook.mjs';
+import {refreshSubstack} from './substack.mjs';
+import {readFile,stat} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(fileURLToPath(new URL('../',import.meta.url)));
+let port=Number(process.env.PORT||4173);
+await syncWorkbook();
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp'};
+const previewServer=http.createServer(async(req,res)=>{try{const url=new URL(req.url,'http://localhost');if(url.pathname==='/content/site.json')await syncWorkbook();if(url.pathname==='/content/substack.json')refreshSubstack().catch(error=>console.warn('Using cached Substack posts:',error.message));const file=path.resolve(root,'.'+decodeURIComponent(url.pathname==='/'?'/index.html':url.pathname));if(!file.startsWith(root+path.sep)&&file!==root)throw Error('Path outside root');const info=await stat(file);if(!info.isFile())throw Error('Not a file');const bytes=await readFile(file);res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store'});res.end(bytes);}catch(error){const badContent=req.url?.startsWith('/content/');res.writeHead(badContent?500:404,{'Content-Type':'text/plain'});res.end(badContent?error.message:'Not found');}});
+const lastPort=port+10;
+previewServer.on('listening',()=>console.log(`Local: http://127.0.0.1:${port}`));
+previewServer.on('error',error=>{if(error.code==='EADDRINUSE'&&port<lastPort){port++;previewServer.listen(port,'127.0.0.1');}else{console.error(error.message);process.exitCode=1;}});
+previewServer.listen(port,'127.0.0.1');

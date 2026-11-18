@@ -1,0 +1,264 @@
+{
+  "name": "beno.",
+  "fullName": "benolin sk",
+  "intro": "Should one take life seriously?",
+  "about": "I'm Benolin. I work as a data scientist at a fintech org. This is my corner on the internet. If you like the stuff on this site, there's a good chance that we can become friends.",
+  "featuredEssay": "knowledge",
+  "essays": [
+    {
+      "id": "knowledge",
+      "title": "The Use of Knowledge in Society",
+      "author": "F. A. Hayek",
+      "note": "On the knowledge scattered among all of us.",
+      "url": "https://www.econlib.org/library/Essays/hykKnw.html"
+    },
+    {
+      "id": "commons",
+      "title": "The Tragedy of the Commons",
+      "author": "Garrett Hardin",
+      "note": "A starting point for a much bigger debate.",
+      "url": "https://www.science.org/doi/10.1126/science.162.3859.1243"
+    }
+  ],
+  "projects": [
+    {
+      "id": "cred-risk",
+      "title": "Making Sense of Credit Access",
+      "category": "Machine Learning",
+      "summary": "Building decision systems that help match borrowers with the right lending opportunities.",
+      "intro": "Getting a loan isn't simply a question of whether someone is creditworthy. It also depends on whether they need credit, how much they need, and which lender might serve them. I worked on bringing these questions together into a more useful decision framework.",
+      "sections": [
+        {
+          "title": "Beyond Credit Scores",
+          "text": "Developed a framework combining credit eligibility, borrowing propensity, expected loan size and lender affinity. Rather than treating every customer as a generic lead, the system helps identify the most appropriate lending or credit-improvement journey."
+        },
+        {
+          "title": "Finding the Right Borrowers",
+          "text": "Built a personal-loan prioritization model. On out-of-time validation, a segment representing roughly 40% of applications accounted for 80% of disbursals and 90% of high-ticket disbursals."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "ai-de",
+      "title": "Reimagining Business Analytics with AI",
+      "category": "AI & Data Engineering",
+      "summary": "Moving from traditional reporting towards a world where people can ask questions directly of their data.",
+      "intro": "Most organizations have plenty of data but still depend on analysts to answer everyday business questions. I've been working on changing that by combining faster analytical infrastructure with open-source AI tools.",
+      "sections": [
+        {
+          "title": "Rethinking the Data Warehouse",
+          "text": "Led the migration of analytical workloads from PostgreSQL to ClickHouse. A proof of concept reduced one representative query from 31 seconds to 0.8 seconds, demonstrating the potential for substantially faster reporting and exploration."
+        },
+        {
+          "title": "Analytics Through Conversation",
+          "text": "Building a self-service analytics layer using LibreChat and domain-specific AI agents. The idea is to let business teams investigate performance, explore trends and query the warehouse through natural-language conversations."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "risk-analytics",
+      "title": "Finding Fraud in Names",
+      "category": "NLP & Risk Analytics",
+      "summary": "Using language similarity and machine learning to uncover potentially fraudulent loan applications.",
+      "intro": "A person's name can appear differently across documents and banking records. Sometimes that's harmless. Sometimes those inconsistencies reveal something worth investigating. At TVS Credit, I worked on using these variations as signals for fraud detection.",
+      "sections": [
+        {
+          "title": "When Names Don't Match",
+          "text": "Developed NLP-based identity-matching workflows to compare customer information against banking records. Used fuzzy matching and machine learning to distinguish ordinary naming variations from suspicious discrepancies."
+        },
+        {
+          "title": "Turning Patterns into Risk Signals",
+          "text": "Integrated identity-matching signals into fraud-identification workflows for consumer-durable lending. The initiative contributed to identifying approximately ₹35 crore in potential fraud risk during FY24."
+        }
+      ],
+      "links": []
+    }
+  ],
+  "writing": [
+    {
+      "label": "Thirty seconds of wind",
+      "note": "Sticky heat, short tempers and red lights",
+      "url": "https://windowwatch.substack.com/p/thirty-seconds-of-wind"
+    },
+    {
+      "label": "I read, therefore I scroll",
+      "note": "A short expose of myself",
+      "url": "https://windowwatch.substack.com/p/i-read-therefore-i-scroll"
+    },
+    {
+      "label": "Same same but different",
+      "note": "Let’s try YouTube",
+      "url": "https://windowwatch.substack.com/p/same-same-but-different"
+    }
+  ],
+  "books": [
+    {
+      "id": "book-1",
+      "title": "The Ideas That Shaped Modern India and Its Economy",
+      "author": "Niranjan Rajadhyaksha",
+      "kind": "Reading",
+      "note": "",
+      "url": "https://www.penguin.co.in/book/the-ideas-that-shaped-india-and-its-economy/",
+      "cover": "assets/books/book-1.jpg",
+      "color": "#b5bfa8"
+    },
+    {
+      "id": "book-2",
+      "title": "Dust",
+      "author": "Hugh Howey",
+      "kind": "Just finished",
+      "note": "The show is better",
+      "url": "https://www.penguin.co.uk/books/418340/dust-by-howey-hugh/9781804940846",
+      "cover": "assets/books/book-2.jpg",
+      "color": "#b0bfca"
+    },
+    {
+      "id": "book-3",
+      "title": "Last Among Equals",
+      "author": "M. R. Sharan",
+      "kind": "Returning to",
+      "note": "a window into how india works",
+      "url": "https://books.google.com/books?id=sYnwzgEACAAJ",
+      "cover": "assets/books/book-3.jpg",
+      "color": "#c5a781"
+    }
+  ],
+  "films": [],
+  "socials": [
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/benolin-kannadasan"
+    },
+    {
+      "label": "Twitter",
+      "url": "https://x.com/ben0lin"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/benolinsk"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@WINDOW_WATCH"
+    },
+    {
+      "label": "Substack",
+      "url": "https://windowwatch.substack.com/"
+    }
+  ],
+  "substackUrl": "https://windowwatch.substack.com/",
+  "writingSource": "feed",
+  "albums": [
+    {
+      "id": "kaber-1",
+      "title": "kurangan",
+      "author": "kaber vasuki",
+      "kind": "",
+      "note": "<3",
+      "url": "https://music.youtube.com/playlist?list=OLAK5uy_nQWuTKQ4FHUUtf9VP0f7bAddVMIGfrG0E",
+      "cover": "assets/albums/kurangan-era.jpg",
+      "color": "#a7b595"
+    }
+  ],
+  "illustrations": [
+    {
+      "id": "person-1",
+      "name": "Richard Dawkins",
+      "image": "assets/people-a.png",
+      "col": 0,
+      "row": 0,
+      "atlas": true
+    },
+    {
+      "id": "person-2",
+      "name": "Christopher Hitchens",
+      "image": "assets/people-a.png",
+      "col": 1,
+      "row": 0,
+      "atlas": true
+    },
+    {
+      "id": "person-4",
+      "name": "Friedrich Hayek",
+      "image": "assets/people-a.png",
+      "col": 3,
+      "row": 0,
+      "atlas": true
+    },
+    {
+      "id": "person-5",
+      "name": "Adam Smith",
+      "image": "assets/people-a.png",
+      "col": 0,
+      "row": 1,
+      "atlas": true
+    },
+    {
+      "id": "person-6",
+      "name": "Leto II Atreides",
+      "image": "assets/people-a.png",
+      "col": 1,
+      "row": 1,
+      "atlas": true
+    },
+    {
+      "id": "person-7",
+      "name": "Charles Darwin",
+      "image": "assets/people-a.png",
+      "col": 2,
+      "row": 1,
+      "atlas": true
+    },
+    {
+      "id": "person-8",
+      "name": "Isaac Newton",
+      "image": "assets/people-a.png",
+      "col": 3,
+      "row": 1,
+      "atlas": true
+    },
+    {
+      "id": "person-9",
+      "name": "Albert Einstein",
+      "image": "assets/people-b.png",
+      "col": 0,
+      "row": 0,
+      "atlas": true
+    },
+    {
+      "id": "person-10",
+      "name": "Niels Bohr",
+      "image": "assets/people-b.png",
+      "col": 1,
+      "row": 0,
+      "atlas": true
+    },
+    {
+      "id": "person-12",
+      "name": "Ilaiyaraaja",
+      "image": "assets/people-b.png",
+      "col": 3,
+      "row": 0,
+      "atlas": true
+    },
+    {
+      "id": "person-13",
+      "name": "Mahatma Gandhi",
+      "image": "assets/people-b.png",
+      "col": 0,
+      "row": 1,
+      "atlas": true
+    },
+    {
+      "id": "person-14",
+      "name": "Jawaharlal Nehru",
+      "image": "assets/people-b.png",
+      "col": 1,
+      "row": 1,
+      "atlas": true
+    }
+  ],
+  "projectsSubtitle": "Data science, ML & AI"
+}

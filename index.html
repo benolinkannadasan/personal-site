@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f6f0"><meta name="description" content="Benolin SK. Work, writing, and a few things on my table."><title>beno.</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="theme.css"><script type="module" src="app.js"></script></head>
+<body><svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><filter id="selective-ink" color-interpolation-filters="sRGB"><feColorMatrix in="SourceGraphic" type="saturate" values="0" result="grey"/><feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 0 4 0 -0.10" result="blueOverRed"/><feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 4 0 -0.10" result="blueOverGreen"/><feComposite in="blueOverRed" in2="blueOverGreen" operator="in" result="blueMask"/><feComponentTransfer in="blueMask" result="blueKey"><feFuncA type="table" tableValues="0 0.8 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="blueKey" operator="in" result="blue"/><feMerge><feMergeNode in="grey"/><feMergeNode in="blue"/></feMerge></filter><filter id="table-green" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="linear" slope="0.48" intercept="0.02"/><feFuncG type="linear" slope="0.54" intercept="0.10"/><feFuncB type="linear" slope="0.32" intercept="0.02"/></feComponentTransfer></filter></defs></svg>
+<a class="skip" href="#work">Skip to content</a>
+<header id="site-header"><a class="wordmark" href="#" aria-label="Beno, home">beno.</a><nav aria-label="Main navigation"><a href="#work">work</a><span>/</span><a href="#writing">writing</a><span>/</span><a href="#table">on my table</a></nav></header>
+<main id="main">
+<div id="home">
+<div class="arrival-scroll" id="arrival">
+<section class="landing" aria-label="Welcome to Benolin's table">
+<div class="landing-name"><span class="full-name">benolin sk</span><span class="short-name">beno.</span></div>
+<p id="intro" class="arrival-subtitle">Reading, making, and figuring things out.</p>
+<div class="window-position" role="img" aria-label="A shuttered window opening onto a blue sky with a floating book and teapot"><div class="simple-window-frame"><span class="window-sky"></span><span class="simple-shutter shutter-left"></span><span class="simple-shutter shutter-right"></span><span class="window-illustration" aria-hidden="true"></span></div></div>
+<div class="table-reveal">
+<div class="green-table"><span></span></div>
+<a href="#work" class="desk-object desk-computer"><span class="sprite vintage-computer" aria-hidden="true"></span><span>work</span></a>
+<a href="#writing" class="desk-object desk-typewriter"><span class="sprite typewriter" aria-hidden="true"></span><span>writing</span></a>
+<a href="#table" class="desk-object desk-book"><span class="sprite open-book" aria-hidden="true"></span><span>on my table</span></a>
+<button type="button" class="sprite davara" id="coffee" aria-label="Warm the coffee and watch the steam"><svg class="coffee-steam" viewBox="0 0 40 52" fill="none" aria-hidden="true"><path d="M11 47 C3 38 19 31 11 23 S15 10 12 4"/><path d="M21 48 C30 40 14 33 22 25 S17 12 23 3"/><path d="M30 47 C23 40 37 33 30 26 S34 16 31 11"/></svg></button>
+</div>
+<div class="people reveal-person"></div><a class="scroll-cue" href="#reveal" aria-label="Scroll to open the window">scroll a little <span>&darr;</span></a>
+</section><span id="reveal" class="reveal-marker" aria-hidden="true"></span>
+</div>
+<section id="work" class="work-section page-section">
+<div class="work-copy"><h1>what I do for money</h1><p id="projects-subtitle" class="section-intro">Data science, questions, and a few experiments.</p><div id="projects" class="project-list"></div></div>
+<div id="home-computer-slot" class="computer-slot"></div><div class="people work-person"></div>
+</section>
+<section class="writing-table-section" aria-label="Writing and on my table">
+<div id="writing" class="writing-column"><h2>writing</h2><div id="writing-links" class="writing-links"></div><a id="substack-more" class="text-link substack-more" href="https://windowwatch.substack.com/" target="_blank" rel="noopener noreferrer">More on Substack <span>&rarr;</span></a><div id="writing-empty"><div class="writing-note"><h3>From the margins</h3><p>Notes on the books I read.</p></div><div class="writing-note"><h3>Looking out</h3><p>Economics, history, and the world outside.</p></div><div class="writing-note"><h3>Small observations</h3><p>Things I notice along the way.</p></div><p class="unpublished-note">Published pieces will find their way here.</p></div></div>
+<div id="table" class="table-column"><h2>on my table lately</h2><a id="daily-essay" target="_blank" rel="noopener noreferrer"><h3 id="essay-title"></h3><p id="essay-note"></p><span id="essay-author" class="byline"></span></a><button id="surprise" class="text-link">Surprise me <span>&rarr;</span></button><a href="#archive" class="text-link">Archive <span>&rarr;</span></a></div>
+<aside id="shelf" class="culture-rail" aria-label="Books, films and albums"><div class="culture-tabs"><button data-shelf-target="books" aria-current="true">books</button><span>/</span><button data-shelf-target="films">films</button><span>/</span><button data-shelf-target="albums">albums</button></div><div id="culture-scroll" class="culture-scroll" tabindex="0" aria-label="Scrollable book, film and album suggestions"><section class="shelf-group" id="shelf-books" aria-label="Book suggestions"><div id="book-suggestions"></div></section><section class="shelf-group" id="shelf-films" aria-label="Film suggestions"><div id="film-suggestions"></div></section><section class="shelf-group" id="shelf-albums" aria-label="Album suggestions"><div id="album-suggestions"></div></section></div><div class="shelf-controls"><button id="shelf-up" aria-label="Scroll suggestions up">&uarr;</button><span>scroll to explore</span><button id="shelf-down" aria-label="Scroll suggestions down">&darr;</button></div></aside>
+</section>
+<div class="lower-illustrations"><div class="people"></div></div><section id="elsewhere" class="elsewhere-section page-section"><h2>elsewhere</h2><div id="socials" class="socials"></div><p id="socials-empty" class="unpublished-note">More windows, soon.</p><p id="about" class="sr-only"></p><div class="people elsewhere-left"></div><div class="people elsewhere-right"></div></section>
+<footer><span>beno.</span><a href="#">back to the window &uarr;</a></footer>
+</div>
+<article id="project-view" hidden><div class="project-shell"><aside><a class="text-link back-link" href="#work">&larr; Back to work</a><div id="project-computer-slot" class="computer-slot"></div></aside><div class="project-body"><p id="project-category" class="eyebrow"></p><h1 id="project-title" tabindex="-1"></h1><p id="project-intro" class="project-lead"></p><div id="project-sections"></div><div id="project-links" class="project-links"></div><div id="next-project"></div></div></div><div class="project-bottom"><div class="people"></div></div></article>
+<section id="archive-view" class="archive-section page-section" hidden><a href="#table" class="text-link">&larr; Back to the table</a><h1>the archive</h1><p>Essays kept within reach.</p><div id="archive-list"></div></section>
+</main>
+<div id="computer" class="computer" role="img" aria-label="A vintage desktop computer with clouds on its screen"><span class="sprite vintage-computer"></span></div>
+<dialog id="surprise-dialog" aria-labelledby="surprise-heading"><button class="dialog-close" aria-label="Close random pick">&times;</button><p class="eyebrow">From the archive</p><h2 id="surprise-heading"></h2><p id="surprise-note"></p><span id="surprise-author" class="byline"></span><div class="dialog-actions"><a id="surprise-read" class="text-link" target="_blank" rel="noopener noreferrer">Read the essay &rarr;</a><button id="pick-again" class="text-link">One more?</button></div></dialog>
+<dialog id="culture-dialog" aria-labelledby="culture-title"><button class="culture-close dialog-close" aria-label="Close shelf">&times;</button><h2 id="culture-title">books</h2><div id="books" class="books"></div><div id="films" class="film-list"></div><div id="albums" class="album-list"></div></dialog>
+<p id="site-error" role="alert" hidden>Something didn't load. Please refresh the page.</p><div id="announcer" class="sr-only" aria-live="polite"></div>
+</body></html>
